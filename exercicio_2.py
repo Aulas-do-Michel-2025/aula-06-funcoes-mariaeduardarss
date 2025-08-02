@@ -15,3 +15,20 @@ def criar_organismo(id, nome, tamanho_do_genoma):
         "nome": nome,
         "tamanho_do_genoma": tamanho_do_genoma
     }
+
+def interativo():
+    print("Vamos criar um organismo!")
+    try:
+        id = int(input("Digite o ID do organismo (número inteiro): "))
+        nome = input("Digite o nome do organismo: ")
+        tamanho_do_genoma = int(input("Digite o tamanho do genoma (número inteiro): "))
+    except ValueError:
+        print("Erro: ID e tamanho do genoma devem ser números inteiros.")
+        return
+
+    organismo = criar_organismo(id, nome, tamanho_do_genoma)
+    print("\nOrganismo criado:")
+    print(organismo)
+
+if __name__ == "__main__":
+    interativo()
