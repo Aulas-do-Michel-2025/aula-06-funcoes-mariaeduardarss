@@ -14,4 +14,8 @@ def calcular_media(lista):
         return 0 
     return sum(lista) / len(lista)
 
-print(calcular_media([0, 100, 200])) 
+numeros = input("Digite os números separados por vírgula: ")
+lista_numeros = [float(num.strip()) for num in numeros.split(",")]
+media = calcular_media(lista_numeros)
+
+print(f"A média dos valores é: {media}")
