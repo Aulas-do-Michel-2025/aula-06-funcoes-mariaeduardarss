@@ -15,6 +15,12 @@ def verificar_nota(nota):
     if nota > 5:
         return "Aprovado"
     elif 3 <= nota <= 5:
-        return "Recuperação"
+        return "de Recuperação"
     else:
         return "Reprovado"
+
+nota_usuario = float(input("Digite a nota do aluno: "))
+
+resultado = verificar_nota(nota_usuario)
+
+print(f"O aluno está: {resultado}")
