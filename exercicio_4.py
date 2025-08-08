@@ -16,17 +16,3 @@ def verificar_se_eh_primo(numero):
                 return False
         return True
     return False
-
-
-def filtrar_lista_por_numeros_primos(lista):
-    lista_filtrada = []
-    for numero in lista:
-        if verificar_se_eh_primo(numero):
-            lista_filtrada.append(numero)
-    return lista_filtrada
-
-entrada = input("Digite os números separados por vírgula: ")
-lista_numeros = [int(num.strip()) for num in entrada.split(",")]
-primos = filtrar_lista_por_numeros_primos(lista_numeros)
-
-print(f"Números primos encontrados: {primos}")
