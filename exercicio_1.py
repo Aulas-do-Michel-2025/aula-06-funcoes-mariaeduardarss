@@ -18,9 +18,3 @@ def verificar_nota(nota):
         return "Recuperação"
     else:
         return "Reprovado"
-
-nota_usuario = float(input("Digite a nota do aluno: "))
-
-resultado = verificar_nota(nota_usuario)
-
-print(f"O aluno está: {resultado}")
